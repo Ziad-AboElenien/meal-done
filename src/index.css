@@ -1,0 +1,307 @@
+body{
+    background-image: linear-gradient(to right, #1d0d12, #270e13, #320e12, #3b0d0d, #440e03);
+    color: #f9f6f6 !important;
+    font-family: var(--main-font);
+}
+
+
+.my-bg{
+    background-image:  linear-gradient(to right, #1d0d12, #270e13, #320e12, #3b0d0d, #440e03);
+}
+
+h1, h2, h3 ,h4 ,h4 ,h5 ,h6
+{
+    font-family: var(--main-h-font);
+}
+
+.w-fit
+{
+    width: fit-content;
+}
+
+.main
+{
+    margin-left: 80px;
+}
+
+.img-done
+{
+    height: 400px;
+    object-fit: cover;
+}
+
+.bg-m{
+    background-color: #320e12;
+}
+
+
+:root {
+    --main-h-font: "Lora", serif;
+    --main-font: "M PLUS Rounded 1c", sans-serif;
+    --text-color: #111;
+    --accent: #ff3355;
+    --input-bg: #ffffff;
+    --input-border: #ccc;
+    --input-text: #111;
+    --input-placeholder: #888;
+    --side-bg: #ffffffee;
+    --border-color: #ddd;
+}
+
+
+
+/* Home Section */
+
+section.home
+{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.084) , rgba(0, 0, 0, 0.627)) , url('./assets/images/bg-home.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+section.home h1::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 70%;
+    background-color: #85580f7d;
+    border-radius: 6px ;
+    /* border-bottom-left-radius: 8px ; */
+    z-index: -1;
+    transition: top .4s;
+    -webkit-transition: top .4s;
+    -moz-transition: top .4s;
+    -ms-transition: top .4s;
+    -o-transition: top .4s;
+}
+
+section.home h1:hover::after
+{
+    top: 35%;
+}
+
+
+
+/* Side Nav */
+
+
+.nav-side {
+    background: var(--side-bg);
+    backdrop-filter: blur(8px);
+    border-right: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.nav-side .links span,
+.nav-side a ,
+.nav-side p.copy ,
+.nav-menu-box ,
+.nav-social 
+{
+    color: var(--text-color) !important;
+    transition: 0.2s;
+}
+
+.nav-side .links span:hover,
+.nav-side a:hover {
+    color: #d74e39 !important;
+}
+
+.nav-side {
+    width: 250px;
+    transform: translateX(-250px);
+    transition: all .7s;
+}
+
+.nav-side.opened {
+    transform: translateX(0);
+}
+
+.nav-side ul.link {
+    transform: translateY(100%);
+    transition: all .8s;
+}
+
+.nav-side.opened ul.link {
+    transform: translateY(0);
+}
+
+.nav-side ul.link li {
+    transform: translateY(400%);
+    transition: all .9s;
+}
+
+.nav-side.opened ul.link li {
+    transform: translateY(0);
+}
+
+
+/* Main nav */
+
+@media screen and (min-width: 600px) {
+    nav {
+        width: 80px;
+    }
+}
+@media screen and (max-width: 900px) {
+    nav {
+        width: 60px;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav {
+        width: 80px;
+    }
+}
+
+nav {
+    transition: all .7s;
+    background-color: var(--side-bg);
+}
+
+nav.opened {
+    transform: translateX(250px);
+}
+
+
+
+/* search inputs */
+
+.search-input {
+    background: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--input-text);
+    transition: 0.3s;
+}
+
+.search-input::placeholder {
+    color: var(--input-placeholder);
+}
+
+.search-input {
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+.search-input:focus {
+    box-shadow: 0 0 12px var(--accent);
+    border-color: var(--accent);
+}
+
+
+/* Card layer */
+
+.layer {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    transition: 0.4s;
+    overflow: hidden;
+}
+.layer h3 {
+    transition: all .7s;
+    box-shadow: inset 0 0 16px white;
+    border-radius: 9px;
+}
+
+.inner:hover .layer {
+    opacity: 1;
+}
+
+
+.img-trans {
+    transition: all .5s;
+}
+
+.inner:hover .img-trans {
+    transform: scale(1.2) ;
+}
+
+
+
+
+/* img in meal details */
+.meal-poster
+{
+    height: 550px;
+    object-fit: cover;
+}
+
+.you-link
+{
+    text-decoration: none;
+    color: white !important;
+}
+
+
+/* sections Adaptee with Nav */
+
+section.categories ,
+section.areas ,
+section.ingrediants ,
+section.search ,
+section.meal-details ,
+footer ,
+section.not-found
+{
+    margin-left: 80px;
+}
+
+/* not found page */
+section.not-found
+{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('./assets/images/NotFound.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* /Loader Style */
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+    0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+} 
+
+
+footer
+{
+    background-image: linear-gradient(to right, #1d0d1200, #270e1329, #320e121b, #3b0d0d23, #440e0373);;
+}

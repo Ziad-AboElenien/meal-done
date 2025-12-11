@@ -1,6 +1,6 @@
 import Cardingrad from "../../components/Cardingrad/Cardingrad";
 import { useEffect, useState } from "react"
-import Footer from '../../components/Footer/Footer.jsx';
+
 
 export default function Ingrediants() {
 
@@ -33,7 +33,7 @@ export default function Ingrediants() {
                     )}
                 </div>
             </section>
-            <Footer />
+
         </>
     )
 }

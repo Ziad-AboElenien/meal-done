@@ -1,7 +1,6 @@
 import x from '../../assets/images/world.png';
 import y from '../../assets/images/desc.png';
 import z from '../../assets/images/links.png';
-import Footer from '../../components/Footer/Footer.jsx';
 
 
 export default function Home() {
@@ -63,7 +62,7 @@ export default function Home() {
                 </div>
             </div>
         </section>
-        <Footer />
+
         </div>
 
     </>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer/Footer.jsx";
+
 
 
 export default function Notfound() {
@@ -12,7 +12,7 @@ export default function Notfound() {
                         <Link className="btn btn-primary px-4 py-2 rounded-3" to="/">Go Home</Link></div>
                 </div>
             </section>
-            <Footer />
+
         </>
     )
 }

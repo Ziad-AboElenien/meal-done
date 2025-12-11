@@ -1,6 +1,5 @@
 import Cardarea from "../../components/CardArea/Cardarea";
 import { useEffect, useState } from "react"
-import Footer from "../../Components/Footer/Footer";
 
 export default function Area() {
 
@@ -34,7 +33,6 @@ export default function Area() {
 
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Footer from '../../components/Footer/Footer.jsx';
 
 export default function Contact() {
 
@@ -58,7 +57,7 @@ Message: ${userMessage}`;
             </form>
         </div>
         </section>
-        <Footer />
+
         </>
     );
 }

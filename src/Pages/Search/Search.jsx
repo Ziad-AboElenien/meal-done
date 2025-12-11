@@ -1,6 +1,6 @@
 import Cardmeal from "../../components/Cardmeal/Cardmeal"
 import { useEffect, useState } from "react"
-import Footer from "../../components/Footer/Footer.jsx";
+
 
 export default function Search() {
 
@@ -91,7 +91,7 @@ export default function Search() {
 
                 </div>
             </section>
-            <Footer />
+
         </>
     )
 }

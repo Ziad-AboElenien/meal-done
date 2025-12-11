@@ -8,7 +8,7 @@ import Contact from "./Pages/Contact/Contact.jsx"
 import Navbar from "./components/Navbar/Navbar.jsx"
 import Mealdetails from "./Pages/Mealdetails/Mealdetails.jsx"
 import Notfound from "./Pages/NotFound/Notfound.jsx"
-import Footer from "./components/Footer/Footer.jsx"
+import Footer from "./components/Footer/footer.jsx"
 
 
 function App() {

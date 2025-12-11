@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Footer from '../../Components/Footer/Footer';
+import Footer from '../../Components/Footer/Footer.jsx';
 
 export default function Contact() {
 

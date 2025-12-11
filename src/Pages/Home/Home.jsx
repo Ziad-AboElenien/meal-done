@@ -1,13 +1,11 @@
 import x from '../../assets/images/world.png';
 import y from '../../assets/images/desc.png';
 import z from '../../assets/images/links.png';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../Components/Footer/Footer.jsx';
 
 
 export default function Home() {
     return <>
-            {/* <Navbar /> */}
         <div className='main'>
             <section className="home">
             <div className="container py-5 d-flex flex-column gap-5 justify-content-center h-75">

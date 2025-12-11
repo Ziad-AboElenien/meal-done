@@ -1,6 +1,6 @@
 import Cardmeal from "../../components/Cardmeal/Cardmeal"
 import { useEffect, useState } from "react"
-import Footer from "../../Components/Footer/Footer";
+import Footer from '../../Components/Footer/Footer.jsx';
 
 export default function Search() {
 

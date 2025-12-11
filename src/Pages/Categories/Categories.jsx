@@ -1,6 +1,6 @@
 import Cardcat from "../../components/Cardcat/Cardcat";
 import { useEffect, useState } from "react"
-import Footer from "../../Components/Footer/Footer.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 export default function Categories() {
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Mealdetails.css';
 import { useParams } from 'react-router-dom';
-import Footer from '../../Components/Footer/Footer.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 
 export default function Mealdetails() {
 

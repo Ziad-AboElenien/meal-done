@@ -1,7 +1,7 @@
 import x from '../../assets/images/world.png';
 import y from '../../assets/images/desc.png';
 import z from '../../assets/images/links.png';
-import Footer from '../../Components/Footer/Footer.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 
 
 export default function Home() {

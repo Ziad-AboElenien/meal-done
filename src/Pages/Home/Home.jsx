@@ -1,16 +1,16 @@
 import x from '../../assets/images/world.png';
 import y from '../../assets/images/desc.png';
 import z from '../../assets/images/links.png';
+import './Home.css';
 
 
 export default function Home() {
     return <>
         <div className='main'>
             <section className="home">
-            <div className="container py-5 d-flex flex-column gap-5 justify-content-center h-75">
+            <div className="container py-5 d-flex flex-column gap-5 justify-content-center h-50">
                 <h1 className="display-2 position-relative z-0 w-fit mx-auto mb-5 fw-bold text-light">Meal Done</h1>
-                <p className="fs-2 w-75 mx-auto text-center">All the world's food recipes, all kinds of dishes and
-                    desserts, from all cultures and countries, all in one place.</p>
+
             </div>
         </section>
         <section className="about">

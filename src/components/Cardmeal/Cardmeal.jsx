@@ -1,25 +1,44 @@
 
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom'
+import './Cardmeal.css'
 
 export default function Cardmeal({ mealInfo }) {
+    const name = mealInfo?.strMeal || 'Meal'
+    const img = mealInfo?.strMealThumb || ''
 
-
-
-
-    return (<>
-        <div  className="item rounded-3">
-            <div className="inner shadow rounded-4 overflow-hidden position-relative">
-                <img className="w-100 img-trans rounded-3" src={mealInfo.strMealThumb} alt={mealInfo.strMeal}/>
-                <div className="layer position-absolute text-white top-0 bottom-0 start-0 end-0  rounded-3">
-                    <div className="trans-left m-5">
-                        <h3 className="movie-name fs-2 my-4 text-center">{mealInfo.strMeal}</h3>
-                        <div className="text-center"><Link to={`/meal/${mealInfo.idMeal}`} className="text-decoration-none w-fit text-white px-3 py-1 rounded-2 bg-secondary">Details</Link></div>
+    return (
+        <div id={mealInfo.idMeal} className="meal-card">
+            <Link 
+                to={`/meal/${encodeURIComponent(mealInfo.idMeal)}`}
+                className="card-link"
+                aria-label={`View ${name} details`}
+            >
+                <div className="card-inner">
+                    {/* Image Section */}
+                    <div className="card-image-wrapper">
+                        <img
+                            className="card-image"
+                            src={img}
+                            alt={name}
+                        />
+                        <div className="image-overlay"></div>
                     </div>
+
+                    {/* Content Section */}
+                    <div className="card-content">
+                        <h3 className="card-title">{name}</h3>
+                        
+                        <div className="card-action">
+                            <span className="action-text">View Details</span>
+                            <i className="fas fa-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+
+                    {/* Decorative Elements */}
+                    <div className="card-shine"></div>
                 </div>
-            </div>
+            </Link>
         </div>
-    </>)
+    )
 }
 

@@ -9,6 +9,9 @@ import Navbar from "./components/Navbar/Navbar.jsx"
 import Mealdetails from "./Pages/Mealdetails/Mealdetails.jsx"
 import Notfound from "./Pages/NotFound/Notfound.jsx"
 import Footer from "./components/Footer/footer.jsx"
+import Category from "./Pages/Category/Category.jsx"
+import Ingradiant from "./Pages/Ingradiant/Ingradiant.jsx"
+import AreaMeals from "./Pages/AreaMeals/AreaMeals.jsx"
 
 
 function App() {
@@ -20,8 +23,11 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/search" element={<Search/>}/>
         <Route path="/categories" element={<Categories/>}/>
+        <Route path="/category/:name" element={<Category/>} />
         <Route path="/area" element={<Area/>}/>
+        <Route path="/area/:name" element={<AreaMeals/>} />
         <Route path="/ingrediants" element={<Ingrediants/>}/>
+        <Route path="/ingredient/:name" element={<Ingradiant/>} />
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/meal/:id" element={<Mealdetails/>} />
         <Route path="*" element={<Notfound/>} />

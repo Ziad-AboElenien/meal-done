@@ -1,0 +1,163 @@
+/* About Section Animations & Effects */
+
+/* About Title */
+.about h2 {
+    position: relative;
+    animation: fadeInDown 1s ease-out;
+    padding-bottom: 20px;
+}
+
+.about h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, rgba(215, 78, 57, 0.8), rgba(133, 88, 15, 0.8), transparent);
+    border-radius: 2px;
+    animation: lineExpand 1s ease-out 0.5s backwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineExpand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+/* About Section Cards */
+.about .inner {
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(215, 78, 57, 0.2), transparent);
+    transition: left 0.7s ease;
+    z-index: 1;
+}
+
+.about .inner:hover::before {
+    left: 100%;
+}
+
+/* Text Cards with Glassmorphism */
+.about .my-bg {
+    backdrop-filter: blur(20px);
+    background: rgba(50, 14, 18, 0.7) !important;
+    border: 2px solid rgba(215, 78, 57, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.about .my-bg:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(215, 78, 57, 0.4);
+    border-color: rgba(215, 78, 57, 0.6);
+    background: rgba(50, 14, 18, 0.85) !important;
+}
+
+.about .my-bg p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Image Cards with Glassmorphism */
+.about .inner.overflow-hidden {
+    backdrop-filter: blur(10px);
+    background: rgba(29, 13, 18, 0.3);
+    border: 2px solid rgba(133, 88, 15, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.about .inner.overflow-hidden:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(133, 88, 15, 0.4);
+    border-color: rgba(133, 88, 15, 0.6);
+}
+
+/* Image Zoom & Rotate Animation */
+.about .inner img {
+    transition: all 0.6s ease;
+    filter: brightness(0.9);
+}
+
+.about .inner:hover img {
+    transform: scale(1.15) rotate(2deg);
+    filter: brightness(1.1);
+}
+
+/* Staggered Item Animation */
+.about .item {
+    animation: itemFadeIn 0.8s ease-out backwards;
+}
+
+.about .row:nth-child(2) .item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.about .row:nth-child(2) .item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.about .row:nth-child(3) .item:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+.about .row:nth-child(3) .item:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.about .row:nth-child(4) .item:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.about .row:nth-child(4) .item:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+@keyframes itemFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about .my-bg:hover,
+    .about .inner.overflow-hidden:hover {
+        transform: translateY(-5px) scale(1.01);
+    }
+    
+    .about .inner:hover img {
+        transform: scale(1.08) rotate(1deg);
+    }
+}

@@ -1,23 +1,47 @@
-import { useEffect, useState } from "react"
+import { Link } from 'react-router-dom'
+import './Cardcat.css'
 
 export default function Cardcat({categoryInfo}) {
+    const desc = categoryInfo?.strCategoryDescription || ''
+    const truncatedDesc = desc.length > 120 ? desc.substring(0, 120) + '...' : desc
 
-
-
-
-    return (<>
-
-
-        <div id={categoryInfo.idCategory} className="item category rounded-3">
-                <div className="inner shadow rounded-4 overflow-hidden position-relative">
-                    <img className="w-100 img-trans rounded-3" src={categoryInfo.strCategoryThumb}alt="Desc" />
-                    <div className="layer position-absolute text-white top-0 bottom-0 start-0 end-0  rounded-3">
-                        <div className="mx-5">
-                            <h3 className="category-name fs-2  text-center">{categoryInfo.strCategory}</h3>
-                        </div>
-                        <p className='mx-2 fs-5'>{categoryInfo.strCategoryDescription}</p>
+    return (
+        <div id={categoryInfo.idCategory} className="category-card">
+            <Link 
+                to={`/category/${categoryInfo.strCategory}`}
+                className="card-link"
+                aria-label={`View ${categoryInfo.strCategory} meals`}
+            >
+                <div className="card-inner">
+                    {/* Image Section */}
+                    <div className="card-image-wrapper">
+                        <img
+                            className="card-image"
+                            src={categoryInfo.strCategoryThumb}
+                            alt={categoryInfo.strCategory}
+                        />
+                        <div className="image-overlay"></div>
                     </div>
+
+                    {/* Content Section */}
+                    <div className="card-content">
+                        <div className="card-header">
+                            <h3 className="card-title">{categoryInfo.strCategory}</h3>
+    
+                        </div>
+                        
+                        <p className="card-description">{truncatedDesc}</p>
+                        
+                        <div className="card-action">
+                            <span className="action-text">Explore Meals</span>
+                            <i className="fas fa-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+
+                    {/* Decorative Elements */}
+                    <div className="card-shine"></div>
                 </div>
-            </div>
-    </>)
+            </Link>
+        </div>
+    )
 }

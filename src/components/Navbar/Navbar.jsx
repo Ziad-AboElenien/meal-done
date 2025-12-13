@@ -72,9 +72,9 @@ export default function Navbar() {
 
                 <div className="nav-footer">
                     <div className="nav-social-links mb-3">
-                        <a href="#" className="nav-social-icon"><i className="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" className="nav-social-icon"><i className="fa-brands fa-twitter"></i></a>
-                        <a href="#" className="nav-social-icon"><i className="fa-brands fa-instagram"></i></a>
+                        <a target='_blank' href="https://www.facebook.com/zezo.aboelenan" className="nav-social-icon"><i className="fa-brands fa-facebook-f"></i></a>
+                        <a target='_blank' href="https://www.linkedin.com/in/ziad-elsayed-399aa62aa/" className="nav-social-icon"><i className="fa-brands fa-linkedin"></i></a>
+                        <a target='_blank' href="https://www.instagram.com/ziad_3lsayed/" className="nav-social-icon"><i className="fa-brands fa-instagram"></i></a>
                     </div>
                     <p className="nav-copyright">© 2024 Meal Done</p>
                     <a href="https://github.com/Ziad-AboElenien" target="_blank" className="nav-creator">by Ziad Elsayed</a>

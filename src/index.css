@@ -48,8 +48,8 @@ h1, h2, h3 ,h4 ,h4 ,h5 ,h6
     --accent: #ff3355;
     --input-bg: #ffffff;
     --input-border: #ccc;
-    --input-text: #111;
-    --input-placeholder: #888;
+    --input-text: white;
+    --input-placeholder: rgb(255, 185, 185);
     --side-bg: #ffffffee;
     --border-color: #ddd;
 }
@@ -442,25 +442,25 @@ section.home h1:hover::after
 /* search inputs */
 
 .search-input {
-    background: var(--input-bg);
-    border-color: var(--input-border);
-    color: var(--input-text);
+    background:  linear-gradient(180deg, rgba(29, 13, 18, 0.95) 0%, rgba(50, 14, 18, 0.92) 100%) !important;
+    border-color: var(--input-border) !important;
+    color: var(--input-text) !important;
     transition: 0.3s;
 }
 
 .search-input::placeholder {
-    color: var(--input-placeholder);
+    color: var(--input-placeholder) !important;
 }
 
 .search-input {
     border-radius: 30px;
     backdrop-filter: blur(12px);
-    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 8px var(--input-text);
 }
 
 .search-input:focus {
-    box-shadow: 0 0 12px var(--accent);
-    border-color: var(--accent);
+    box-shadow: 0 0 12px var(--accent) !important;
+    border-color: var(--accent) !important;
 }
 
 
@@ -561,4 +561,10 @@ section.not-found
 footer
 {
     background-image: linear-gradient(to right, #1d0d1200, #270e1329, #320e121b, #3b0d0d23, #440e0373);;
+}
+
+.img-logo-footer
+{
+    width: 50px !important;
+    height: 50px;
 }

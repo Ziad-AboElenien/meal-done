@@ -71,13 +71,13 @@ Message: ${userMessage}`;
                         <div className="contact-social">
                             <h3>Follow Us</h3>
                             <div className="contact-social-links">
-                                <a href="#" className="contact-social-link">
+                                <a href="https://www.facebook.com/zezo.aboelenan" className="contact-social-link">
                                     <i className="fa-brands fa-facebook-f"></i>
                                 </a>
-                                <a href="#" className="contact-social-link">
-                                    <i className="fa-brands fa-twitter"></i>
+                                <a href="https://www.linkedin.com/in/ziad-elsayed-399aa62aa/" className="contact-social-link">
+                                    <i className="fa-brands fa-linkedin"></i>
                                 </a>
-                                <a href="#" className="contact-social-link">
+                                <a href="https://www.instagram.com/ziad_3lsayed/" className="contact-social-link">
                                     <i className="fa-brands fa-instagram"></i>
                                 </a>
                                 <a href="https://github.com/Ziad-AboElenien" target="_blank" className="contact-social-link">

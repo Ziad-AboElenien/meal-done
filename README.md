@@ -135,23 +135,7 @@ Endpoints used:
 
 /lookup.php?i=
 
-🎯 What I Learned
 
-Handling multiple API requests
-
-SPA routing with React Router
-
-Deploying React + Vite on Vercel
-
-Creating reusable UI components
-
-Working with dynamic URL params (useParams)
-
-Optimizing folder structure
-
-📸 Screenshots
-
-(حط صور من المشروع لو حبيت)
 
 ✨ Author
 
